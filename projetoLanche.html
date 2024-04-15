@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Lanchonete</title>
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+    <link rel="stylesheet" href="projetoLanche.css">
+</head>
+<body>
+    <header class="header">
+        <div class="letreiro_container">
+            <div class="container_img_logo">
+                <img class="logo" src="./img/lanche.jpeg" alt="">
+            </div>
+            <h1 class="letreiro">Hamburgueria</h1>
+        </div>
+        <nav>
+            <ol>
+                <li> 
+                    <a href="#fazerPedido"> Fazer Pedido </a>
+                </li>
+                <li>
+                    <a href="#verPedidos"> Ver Pedidos </a>
+                </li>
+            </ol>
+        </nav> 
+    </header>
+    <main>
+        
+        <section class="form" id="fazerPedido">
+            <form action="#" onsubmit="event.preventDefault()">   
+                <h2 class="form_main_title">fazer pedido</h2>
+                <div class="produto_container">
+                    <div class="user_info_container">
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome" required maxlength="20">
+                    </div>
+                <div> 
+                
+                <div class="produto_container bebida_container">
+                    <h3 class="title_sessao">bebidas</h3>
+                    <div class="produto_container_itens">
+                        <div class="cada_produto coca_bebida">
+                            <p>coca-cola</p>
+                            <div class="produto_img">
+                                <img src="./img/CocaCola.png" alt="coca-cola" class="img-card">
+                            </div>
+                            <label for="preco_coca"> preço R$
+                                <input type="text" value="4.99" name="preco" id="preco_coca" readonly>
+                            </label>
+                            <label for="coca"> 
+                                <input type="checkbox" name="produto" value="coca-cola lata" id="coca">
+                            </label>
+                        </div>
+                        <div class="cada_produto sprite_bebida">
+                            <p>sprite</p>
+                            <div class="produto_img">
+                                <img src="./img/Sprite.png" alt="refrigerante sprite" class="img-card">
+                            </div>
+                            <label for="preco_sprite"> preço R$
+                                <input type="text" value="4.50" name="preco" id="preco_sprite" readonly>
+                            </label>
+                            <label for="sprite">
+                                <input type="checkbox" name="produto" value="sprite lata" id="sprite">
+                            </label>
+                        </div>
+                        <div class="cada_produto guarana_bebida">
+                            <p>guarana</p>
+                            <div class="produto_img">
+                                <img src="./img/Guarana.png" alt="refrigerante guarana" class="img-card">
+                            </div>
+                            <label for="preco_guarana"> preço R$
+                                <input type="text" value="4.50" name="preco" id="preco_guarana" readonly>
+                            </label>
+                            <label for="guarana">
+                                <input type="checkbox" name="produto" value="guarana lata" id="guarana">
+                            </label>
+                        </div>
+                        <div class="cada_produto coca_zero_bebida">
+                            <p>coca-zero</p>
+                            <div class="produto_img">
+                                <img src="./img/CocaZero.png" alt="refrigerante coca_zero" class="img-card">
+                            </div>
+                            <label for="preco_coca_zero"> preço R$
+                                <input type="text" value="4.99" name="preco" id="preco_coca_zero" readonly>
+                            </label>
+                            <label for="coca-zero">
+                                <input type="checkbox" name="produto" value="coca-zero lata" id="coca-zero">
+                            </label>
+                        </div>
+                        <div class="cada_produto fanta_laranja_bebida">
+                            <p>fanta laranja</p>
+                            <div class="produto_img">
+                                <img src="./img/FantaLaranja.png" alt="refrigerante fanta laranja" class="img-card">
+                            </div>
+                            <label for="preco_fanta_laranja"> preço R$
+                                <input type="text" value="4.99" name="preco" id="preco_fanta_laranja" readonly>
+                            </label>
+                            <label for="fanta-laranja">
+                                <input type="checkbox" name="produto" value="fanta-laranja lata" id="fanta-laranja">
+                            </label>
+                        </div>
+                        <div class="cada_produto fanta_uva_bebida">
+                            <p>Fanta Uva</p>
+                            <div class="produto_img">
+                                <img src="./img/FantaUva.png" alt="refrigerante fanta uva" class="img-card">
+                            </div>
+                            <label for="preco_fanta_uva">Preço R$
+                                <input type="text" name="preco" value="4.99" id="preco_fanta_uva" readon>
+                            </label>
+                            <label for="fanta-uva">
+                                <input type="checkbox" name="produto" value="fanta-uva lata" id="fanta-uva">
+                            </label>
+                        </div>
+                        <div class="cada_produto pepsi_bebida">
+                            <p>Pepsi</p>
+                            <div class="produto_img">
+                                <img src="./img/Pepsi.png" alt="refrigerante pepsi" class="img-card">
+                            </div>
+                            <label for="preco_pepsi">Preço R$
+                                <input type="text" name="preco" value="4.00" id="preco_pepsi" readonly>
+                            </label>
+                            <label for="pepsi">
+                                <input type="checkbox" name="produto" value="pepsi lata" id="pepsi">
+                            </label>
+                        </div>
+                    </div>    
+                </div>
+                
+                <div class="produto_container lanche_container">
+                    <h3 class="title_sessao">lanches</h3>
+                    <div class="produto_container_itens">
+                        <div class="cada_produto xSalada_lanche">
+                            <p>x-salada</p>
+                            <div class="produto_img">
+                                <img src="./img/X-Salada.png" alt="x-salada" class="img-card">
+                            </div>
+                            <label for="preco_xSalada"> preço R$
+                                <input type="text" value="14.90" name="preco" id="preco_xSalada" readonly>
+                            </label>
+                            <label for="xSalada">
+                                <input type="checkbox" name="produto" value="x-salada" id="xSalada">
+                            </label>
+                        </div>
+                        <div class="cada_produto xEgg_lanche">
+                            <p>x-egg</p>
+                            <div class="produto_img">
+                                <img src="./img/X-Egg.png" alt="x-egg" class="img-card">
+                            </div>
+                            <label for="preco_xEgg"> preço R$
+                                <input type="text" value="15.90" name="preco" id="preco_xEgg" readonly>
+                            </label>
+                            <label for="xEgg">
+                                <input type="checkbox" name="produto" value="x-egg" id="xEgg">
+                            </label>
+                        </div>
+                        <div class="cada_produto xQueijo_lanche">
+                            <p>x-queijo</p>
+                            <div class="produto_img">
+                                <img src="./img/x-Queijo.jpg" alt="x-queijo" class="img-card">
+                            </div>
+                            <label for="preco_xQueijo"> preço R$
+                                <input type="text" value="16.50" name="preco" id="preco_xQueijo" readonly>
+                            </label>
+                            <label for="xQueijo">
+                                <input type="checkbox" name="produto" value="x-queijo" id="xQueijo">
+                            </label>
+                        </div>
+                        <div class="cada_produto xCalabresa_lanche">
+                            <p>x-calabresa</p>
+                            <div class="produto_img">
+                                <img src="./img/X-Calabresa.png" alt="x-calabresa" class="img-card">
+                            </div>
+                            <label for="preco_xCalabresa"> preço R$
+                                <input type="text" value="18.00" name="preco" id="preco_xCalabresa" readonly>
+                            </label>
+                            <label for="xCalabresa">
+                                <input type="checkbox" name="produto" value="x-calabresa" id="xCalabresa">
+                            </label>
+                        </div>
+                        <div class="cada_produto xFrango_lanche">
+                            <p>x-frango</p>
+                            <div class="produto_img">
+                                <img src="./img/X-Frango.png" alt="x-frango" class="img-card">
+                            </div>
+                            <label for="preco_xFrango"> preço R$
+                                <input type="text" value="18.00" name="preco" id="preco_xFrango" readonly>
+                            </label>
+                            <label for="xFrango">
+                                <input type="checkbox" name="produto" value="x-frango" id="xFrango">
+                            </label>
+                        </div>
+                        <div class="cada_produto xBacon_lanche">
+                            <p>x-bacon</p>
+                            <div class="produto_img">
+                                <img src="./img/X-Bacon.png" alt="x-bacon" class="img-card">
+                            </div>
+                            <label for="preco_xBancon"> preço R$
+                                <input type="text" value="18.50" name="preco" id="preco_xBancon" readonly>
+                            </label>
+                            <label for="xBacon">
+                                <input type="checkbox" name="produto" value="x-bacon" id="xBacon">
+                            </label>
+                        </div>
+                        <div class="cada_produto xTudo_lanche">
+                            <p>x-tudo</p>
+                            <div class="produto_img">
+                                <img src="./img/X-Tudo.jpeg" alt="x-tudo" class="img-card">
+                            </div>
+                            <label for="preco_xTudo"> preço R$
+                                <input type="text" value="20.00" name="preco" id="preco_xTudo" readonly>
+                            </label>
+                            <label for="xTudo">
+                                <input type="checkbox" name="produto" value="x-tudo" id="xTudo">
+                            </label>
+                        </div>
+                        <div class="cada_produto xTriplo_lanche">
+                            <p>x-triplo</p>
+                            <div class="produto_img">
+                                <img src="./img/X-Triplo.png" alt="x-triplo" class="img-card">
+                            </div>
+                            <label for="preco_xTriplo"> preço R$
+                                <input type="text" value="22.00" name="preco" id="preco_xTriplo" readonly>
+                            </label>
+                            <label for="xTriplo">
+                                <input type="checkbox" name="produto" value="x-triplo" id="xTriplo">
+                            </label>
+                        </div>
+                    </div>        
+                </div>
+
+                <div class="container_form_button">
+                    <button type="submit" value="mandar" class="btn btn_form" id="btn_submit">enviar</button>
+                    <button type="reset" class="btn btn_reset btn_form">resetar</button>
+                </div>
+            </form>
+        </section>    
+        
+        <section id="verPedidos">
+            <div id="table_container"></div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Unicesumar - ADSIS 3° semestre</p>
+        </footer>
+        
+    <main>
+    <script src="projetoLanches.js"></script>
+</body>
+</html>
